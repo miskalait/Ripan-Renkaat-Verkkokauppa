@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'/>
+  <meta name="viewport" content="width=device">
+  <title>Harjoitustyö</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='styles/style.css'/>
+  <link rel='stylesheet' href='styles/signin.css'/>
+  <script type="text/js.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navigointi ja slideri -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="d-flex flex-grow-1" class="menutoggle">
+          <span class="w-100 d-lg-none d-block"></span>
+          <a class="navbar-brand d-none d-lg-inline-block" href="frontpage.html">
+              Ripan Renkaat
+          </a>
+          <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+          </a>
+          <div class="w-100 text-right">
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+      aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+      class="fas fa-bars fa-1x"></i></span></button>
+
+          </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item">
+                  <a href="frontpage.html" class="nav-link m-2 menu-item nav-active ">Etusivu</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link m-2 menu-item">Palvelut</a>
+              </li>
+              <li class="nav-item">
+                  <a href="login.html" class="nav-link m-2 menu-item">Kirjaudu</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link m-2 menu-item">Ostoskori</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+</header>
+
+  <!-- Kirjaud sisään -->
+  <section>
+    <form action="action_page.php" style="border:1px solid #ccc">
+      <div class="container">
+        <h1>Kirjaudu sisään</h1>
+        <hr>
+
+        <label for="email"><b>Sähköposti</b></label>
+        <input type="text" placeholder="Sähköposti" name="email" required>
+
+        <label for="psw"><b>Salasana</b></label>
+        <input type="password" placeholder="Salasana" name="psw" required>
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Muista minut
+        </label>
+
+        <div class="clearfix">
+          <button type="submit" class="signupbtn">Kirjaudu Sisään</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Lataa meidän sovellus</h3>
+          <p>Lataa meidän sovellus Play kaupasta tai App storesta.</p>
+          <div class="app-logo">
+            <img src="images/play-store.png" alt="">
+            <img src="images/app-store.png" alt="">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/ripa.png" alt="Footerkuva">
+          <p>Keskinkertaista paskaa.</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Hyödyllistä tietoa</h3>
+          <ul>
+            <li>Yhteystiedot</li>
+            <li>Usein kysytyt kysymykset</li>
+            <li>Toimitusehdot</li>
+            <li>Tietosuojaseloste</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Seuraa meitä</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
